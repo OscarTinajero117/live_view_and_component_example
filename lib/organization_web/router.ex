@@ -18,6 +18,8 @@ defmodule OrganizationWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    live "/dash/:word", DashLive
   end
 
   # Other scopes may use custom stacks.
